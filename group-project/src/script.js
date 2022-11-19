@@ -19,14 +19,23 @@ request.post(authOptions, function(error, response, body) {
 
     var token = body.access_token;
     var options = {
-      url: 'https://api.spotify.com/v1/playlists/37i9dQZF1DX1YPTAhwehsC/tracks?limit=80',
+      url: 'https://api.spotify.com/v1/playlists/37i9dQZF1DX1YPTAhwehsC/tracks?limit=5',
       headers: {
         'Authorization': 'Bearer ' + token
       },
       json: true
     };
     request.get(options, function(error, response, body) {
-      console.log(body);
+      let array = []
+      body.items.map((item) => {
+        array.push([item.track.album.images[0].url, item.track.name, item.track.popularity])
+        
+      })
+      array.sort(function(a, b) {
+        return a[2] - b[2];
+    });
+      console.log(array);
+     
     });
   }
 });
