@@ -33,7 +33,7 @@ request.post(authOptions, function(error, response, body) {
       })
       array.sort(function(a, b) {
         return a[2] - b[2];
-    });
+      });
       console.log(array);
      
     });

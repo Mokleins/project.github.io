@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  margin: 20;
+  margin-left: 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,19 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.sort {
+  margin-bottom: 10px;
+  font-size: large;
 }
