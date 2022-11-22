@@ -20,12 +20,22 @@ function SortBy({ sort, setSort }) {
       <label>
         <input
           type="radio"
-          value="Popularity"
+          value="Popularity Ascending"
           name="sort"
-          checked={sort === 'Popularity'}
+          checked={sort === 'Popularity Ascending'}
           onChange={handleSortChange}
         />
-        Popularity
+        Popularity Ascending
+      </label>
+      <label>
+        <input
+          type="radio"
+          value="Popularity Descending"
+          name="sort"
+          checked={sort === 'Popularity Descending'}
+          onChange={handleSortChange}
+        />
+        Popularity Descending
       </label>
     </div>
   );
