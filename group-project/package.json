@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Group101-12-Final-Project.github.io/group-project",
+  "homepage": "http://mokleins.github.io/project.github.io/group-project",
   "name": "group-project",
   "version": "0.1.0",
   "private": true,
@@ -40,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
